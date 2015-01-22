@@ -1,0 +1,110 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		C57AEBC719C7E7BC00072531 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		C57AEBC819C7E7BC00072531 /* cairo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cairo; sourceTree = "<group>"; };
+		C57AEBC919C7E7BC00072531 /* expat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = expat; sourceTree = "<group>"; };
+		C57AEBCA19C7E7BC00072531 /* fontconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fontconfig; sourceTree = "<group>"; };
+		C57AEBCB19C7E7BC00072531 /* freetype */ = {isa = PBXFileReference; lastKnownFileType = folder; path = freetype; sourceTree = "<group>"; };
+		C57AEBCC19C7E7BC00072531 /* icu */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icu; sourceTree = "<group>"; };
+		C57AEBCD19C7E7BC00072531 /* lcms */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lcms; sourceTree = "<group>"; };
+		C57AEBCE19C7E7BC00072531 /* libs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = libs; sourceTree = "<group>"; };
+		C57AEBCF19C7E7BC00072531 /* MAEGL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MAEGL; sourceTree = "<group>"; };
+		C57AEBD019C7E7BC00072531 /* MAGLESv1_enc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MAGLESv1_enc; sourceTree = "<group>"; };
+		C57AEBD119C7E7BC00072531 /* MAKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MAKit; sourceTree = "<group>"; };
+		C57AEBD219C7E7BC00072531 /* MAOpenglCodecCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MAOpenglCodecCommon; sourceTree = "<group>"; };
+		C57AEBD319C7E7BC00072531 /* MAOpenglSystemCommon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MAOpenglSystemCommon; sourceTree = "<group>"; };
+		C57AEBD419C7E7BC00072531 /* MARenderControl_enc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MARenderControl_enc; sourceTree = "<group>"; };
+		C57AEBD519C7E7BC00072531 /* objc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = objc; sourceTree = "<group>"; };
+		C57AEBD619C7E7BC00072531 /* pixman */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pixman; sourceTree = "<group>"; };
+		C57AEBD719C7E7BC00072531 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
+		C57AEBD819C7E7BC00072531 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C57AEBD919C7E7BC00072531 /* template */ = {isa = PBXFileReference; lastKnownFileType = folder; path = template; sourceTree = "<group>"; };
+		C57AEBDA19C7EDB500072531 /* clean.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = clean.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		C57AEBC019C7E78100072531 = {
+			isa = PBXGroup;
+			children = (
+				C57AEBC719C7E7BC00072531 /* build.sh */,
+				C57AEBDA19C7EDB500072531 /* clean.sh */,
+				C57AEBC819C7E7BC00072531 /* cairo */,
+				C57AEBC919C7E7BC00072531 /* expat */,
+				C57AEBCA19C7E7BC00072531 /* fontconfig */,
+				C57AEBCB19C7E7BC00072531 /* freetype */,
+				C57AEBCC19C7E7BC00072531 /* icu */,
+				C57AEBCD19C7E7BC00072531 /* lcms */,
+				C57AEBCE19C7E7BC00072531 /* libs */,
+				C57AEBCF19C7E7BC00072531 /* MAEGL */,
+				C57AEBD019C7E7BC00072531 /* MAGLESv1_enc */,
+				C57AEBD119C7E7BC00072531 /* MAKit */,
+				C57AEBD219C7E7BC00072531 /* MAOpenglCodecCommon */,
+				C57AEBD319C7E7BC00072531 /* MAOpenglSystemCommon */,
+				C57AEBD419C7E7BC00072531 /* MARenderControl_enc */,
+				C57AEBD519C7E7BC00072531 /* objc */,
+				C57AEBD619C7E7BC00072531 /* pixman */,
+				C57AEBD719C7E7BC00072531 /* png */,
+				C57AEBD819C7E7BC00072531 /* README.md */,
+				C57AEBD919C7E7BC00072531 /* template */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		C57AEBC119C7E78100072531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = C57AEBC419C7E78100072531 /* Build configuration list for PBXProject "libraries" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C57AEBC019C7E78100072531;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		C57AEBC519C7E78100072531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		C57AEBC619C7E78100072531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C57AEBC419C7E78100072531 /* Build configuration list for PBXProject "libraries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C57AEBC519C7E78100072531 /* Debug */,
+				C57AEBC619C7E78100072531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C57AEBC119C7E78100072531 /* Project object */;
+}
