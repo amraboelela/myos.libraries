@@ -6,4 +6,4 @@ LDLIBS=
 LDFLAGS=-v -Wl,--no-undefined
 OBJECTS = \
 
-include ${MYOS_PATH}/android/sdk/resources/makefile-static
+include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static

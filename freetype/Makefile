@@ -45,7 +45,7 @@ OBJECTS = \
     ftwinfnt.o \
     ftxf86.o \
 
-include ${MYOS_PATH}/android/sdk/resources/makefile-static
+include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static
 
 $(ODIR)/%.o: ${MYOS_PATH}/android/libraries/freetype/base/%.c
 	$(CC) $(CFLAGS) -c $< -o $@

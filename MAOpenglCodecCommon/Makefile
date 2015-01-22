@@ -7,4 +7,4 @@ OBJECTS = \
     GLClientState.o \
     glUtils.o \
 
-include ${MYOS_PATH}/android/sdk/resources/makefile-static
+include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static

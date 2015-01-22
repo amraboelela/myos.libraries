@@ -24,4 +24,4 @@ OBJECTS = \
     statics_loader.o \
     block_trampolines.o \
 
-include ${MYOS_PATH}/android/sdk/resources/makefile-static
+include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static

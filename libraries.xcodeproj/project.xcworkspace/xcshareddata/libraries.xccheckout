@@ -10,14 +10,14 @@
 	<string>libraries</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D3984560495A5159F430FACA564D8BEA4C5D82EA</key>
+		<key>AC20385056DAAAC2C8AB99DFB4FB40FFB29D8869</key>
 		<string>https://github.com/amraboelela/myos.android.libraries.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>libraries.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D3984560495A5159F430FACA564D8BEA4C5D82EA</key>
+		<key>AC20385056DAAAC2C8AB99DFB4FB40FFB29D8869</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D3984560495A5159F430FACA564D8BEA4C5D82EA</string>
+	<string>AC20385056DAAAC2C8AB99DFB4FB40FFB29D8869</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D3984560495A5159F430FACA564D8BEA4C5D82EA</string>
+			<string>AC20385056DAAAC2C8AB99DFB4FB40FFB29D8869</string>
 			<key>IDESourceControlWCCName</key>
 			<string>libraries</string>
 		</dict>
