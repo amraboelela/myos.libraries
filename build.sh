@@ -18,7 +18,8 @@
 echo
 echo "****************************** Building libraries ******************************"
 
-#CAN_CLEAN=NO
+#if [ ${BASE_OS} = "android" ]; then
+
 TARGET=Universal
 
 cd objc
@@ -81,4 +82,6 @@ cd MAKit
 source ${MYOS_PATH}/android/sdk/scripts/library-build.sh
 cd ..
 
-#CAN_CLEAN=YES
+#elif
+
+#fi
