@@ -42,6 +42,8 @@
 #include "cairo-features.h"
 #include "cairo-deprecated.h"
 
+#ifdef ANDROID
+
 #import <android/log.h>
 
 #ifdef DEBUG
@@ -52,6 +54,8 @@
 #define printf(...)
 #define fprintf(stderr,...)
 #define vfprintf(stderr, ...)
+#endif
+
 #endif
 
 #ifdef  __cplusplus
