@@ -18,8 +18,6 @@
 echo
 echo "****************************** Building libraries ******************************"
 
-#if [ ${BASE_OS} = "android" ]; then
-
 TARGET=Universal
 
 cd objc
@@ -74,6 +72,8 @@ cd ..
 #source ${MYOS_PATH}/sdk/scripts/library-build.sh
 #cd ..
 
+if [ ${BASE_OS} = "android" ]; then
+
 cd MAEGL
 source ${MYOS_PATH}/sdk/scripts/library-build.sh
 cd ..
@@ -84,4 +84,4 @@ cd ..
 
 #elif
 
-#fi
+fi
