@@ -15,44 +15,44 @@
 # Amr Aboelela <amraboelela@gmail.com>
 #
 
-#echo
-#echo "****************************** Cleaning libraries ******************************"
+echo
+echo "****************************** Cleaning libraries ******************************"
 
-#cd objc
-#make clean
-#cd ..
+cd objc
+make clean
+cd ..
 
-#cd icu
-#make clean
-#cd ..
+cd icu
+make clean
+cd ..
 
-#cd pixman
-#make clean
-#cd ..
+cd pixman
+make clean
+cd ..
 
-#cd png
-#make clean
-#cd ..
+cd png
+make clean
+cd ..
 
-#cd freetype
-#make clean
-#cd ..
+cd freetype
+make clean
+cd ..
 
-#cd expat
-#make clean
-#cd ..
+cd expat
+make clean
+cd ..
 
-#cd fontconfig
-#make clean
-#cd ..
+cd fontconfig
+make clean
+cd ..
 
-#cd cairo
-#make clean
-#cd ..
+cd cairo
+make clean
+cd ..
 
-#cd lcms
-#make clean
-#cd ..
+cd lcms
+make clean
+cd ..
 
 ##cd MAGLESv1_enc
 ##make clean
