@@ -4,4 +4,4 @@
   * [myos.sdk](https://github.com/amraboelela/myos.sdk)
 
 * For more info:
-[myos.libraries.wiki](https://github.com/amraboelela/myos.libraries/wiki)
+[myos.frameworks.wiki](https://github.com/amraboelela/myos.frameworks/wiki)
