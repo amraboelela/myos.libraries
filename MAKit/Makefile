@@ -6,4 +6,4 @@ LIB_NAME=MAKit
 CFLAGS=-DDEBUG -I$(ANDROID_SOURCE_PATH)/device/generic/goldfish/opengl/system -I$(ANDROID_SOURCE_PATH)/development/tools/emulator/opengl/host/include/libOpenglRender -I${MY_FRAMEWORKS_PATH}/libraries/MAOpenglCodecCommon
 OBJECTS=MABufferProducer.o MABufferQueue.o MAWindow.o MAWindowHook.o
 
-include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static

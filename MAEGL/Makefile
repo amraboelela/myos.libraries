@@ -13,4 +13,4 @@ OBJECTS = \
     eglDisplay.o \
     eglContext.o \
 
-include ${MYOS_PATH}/sdk/makefiles/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
