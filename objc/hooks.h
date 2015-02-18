@@ -25,7 +25,7 @@ struct objc_category;
 /**
  * Class load callback.  
  */
-//OBJC_HOOK void (*_objc_load_callback)(Class cls, struct objc_category *category);
+OBJC_HOOK void (*_objc_load_callback)(Class cls, struct objc_category *category);
 /**
  * The hook used for fast proxy lookups.  This takes an object and a selector
  * and returns the instance that the message should be forwarded to.
@@ -41,7 +41,7 @@ extern struct objc_slot *(*__objc_msg_forward3)(id, SEL);
  * Forwarding hook.  Takes an object and a selector and returns a method that
  * handles the forwarding.
  */
-//OBJC_HOOK IMP (*__objc_msg_forward2)(id, SEL);
+OBJC_HOOK IMP (*__objc_msg_forward2)(id, SEL);
 /**
  * Hook defined for handling unhandled exceptions.  If the unwind library
  * reaches the end of the stack without finding a handler then this hook is

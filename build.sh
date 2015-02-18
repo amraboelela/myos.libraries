@@ -24,7 +24,7 @@ cd objc
 source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
-#if [ ${BASE_OS} = "android" ]; then
+if [ ${BASE_OS} = "android" ]; then
 
 cd icu
 source ${MYOS_PATH}/sdk/library-build.sh
@@ -84,4 +84,4 @@ cd ..
 
 #elif
 
-#fi
+fi
