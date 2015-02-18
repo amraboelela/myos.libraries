@@ -24,4 +24,10 @@ OBJECTS = \
     statics_loader.o \
     block_trampolines.o \
 
+ifeq ($(BASE_OS),android)
 include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
+else
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared
+endif
+
+
