@@ -21,65 +21,65 @@ echo "****************************** Building libraries ************************
 TARGET=Universal
 
 cd objc
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 #if [ ${BASE_OS} = "android" ]; then
 
 cd icu
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd pixman
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd png
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd freetype
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd expat
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd fontconfig
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd cairo
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd lcms
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 #cd MAGLESv1_enc
-#source ${MYOS_PATH}/sdk/scripts/library-build.sh
+#source ${MYOS_PATH}/sdk/library-build.sh
 #cd ..
 
 #cd MARenderControl_enc
-#source ${MYOS_PATH}/sdk/scripts/library-build.sh
+#source ${MYOS_PATH}/sdk/library-build.sh
 #cd ..
 
 #cd MAOpenglSystemCommon
-#source ${MYOS_PATH}/sdk/scripts/library-build.sh
+#source ${MYOS_PATH}/sdk/library-build.sh
 #cd ..
 
 #cd MAOpenglCodecCommon
-#source ${MYOS_PATH}/sdk/scripts/library-build.sh
+#source ${MYOS_PATH}/sdk/library-build.sh
 #cd ..
 
 cd MAEGL
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 cd MAKit
-source ${MYOS_PATH}/sdk/scripts/library-build.sh
+source ${MYOS_PATH}/sdk/library-build.sh
 cd ..
 
 #elif
