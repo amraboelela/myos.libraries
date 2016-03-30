@@ -1,0 +1,341 @@
+2015-10-07 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.m: Add method for writing a whole block of data to a FIFO
+	in one go.
+
+2015-07-29 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSLinkedList.h:
+	* GSLinkedList.m:
+	Add GSLinkedStore for a list which controls its own links and stores
+	unused links to avoid having to create/destroy link objects
+	repeatedly.
+
+2015-07-17 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.m: Implement methods that allow waiting on an empty
+	FIFO for an arbitrary period of time, without raising an
+	exception.
+
+2015-07-16 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.m: Implement -sizeInBytesExcluding:
+
+2015-07-15 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.m: Experimental change (use in conjunction with gnustep-base
+	from svn 38799) to put object memory footprint interrogation into the
+	base library and make it more accurate and efficient.
+
+2015-05-05 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.m: Fix a potential race condition in -peekObject.
+
+2015-05-05 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.[hm]: Add methods to peek at the top/front object in the
+	FIFO without removing it.
+
+2015-04-28 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.m: Use -autorelease rather than -release when returning
+	objects from a FIFO. Fixes a bug where a returned reference would
+	already be invalid because the FIFO was the last owner of the object.
+
+2015-01-09 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.[hm]: add methods for working with objects and handling
+	retain/release to treat a FIFO as a container.
+
+2014-11-12 Riccardo Mottola <rm@gnu.org>
+
+	* GSThreadPool.m
+	* GSSkipMutableArray.m
+	* GSCache.m
+	Import inttypes.h for pointer formatting
+
+2014-11-12 Riccardo Mottola <rm@gnu.org>
+
+	* GSThreadPool.h
+	Forward-declare NSRecursiveLock, not NSLock
+
+2014-07-11  Yavor Doganov  <yavor@gnu.org>
+
+	* GNUmakefile (LIBRARIES_DEPEND_UPON): Define.
+
+2014-04-26 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSUniqued.h:
+	* GSUniqued.m:
+	* Performance.h:
+	* GNUmakefile:
+	New code to implement uniqued copies of objects for lowered memory
+	footprint and faster collection lookups.
+
+2013-11-05 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSFIFO.m: Fix calculation of the timeout for cooperating
+	get/put.
+
+2013-08-21 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.m: 64bit printf format changes
+	* GSSkipMutableArray.m: 64bit printf format changes
+	* GSCache.m: Fix mime size calculations for nonfragile abi.
+	Change API to use NSUInteger for sizes
+	* GNUmakefile: bump version fro new release
+
+2013-06-25 Richard Frith-Macdonald  <rfm@gnu.org>
+
+        * GNUmakefile: bump subminor version 
+	* GSIOThreadPool.h:
+	* GSIOThreadPool.m:
+        Add default for initialisation of shared pool, fix bug in setting
+        new thread and add code for shrinking the pool size (previously
+        setting it smaller did not actually cause old threads to exit).
+
+2013-02-07 Sebastian Reitenbach <sebastia@l00-bugdead-prods.de>
+
+	* GSThreadPool.h, GSCache.m
+	  shutup clang warnings
+
+2013-02-03 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSTicker.m: Retain timer so that we can safely invalidate it even
+	on thread exit when the runloop of the current thread may have been
+	deallocated already.
+
+2012-01-11 Niels Grewe <niels.grewe@halbordnung.de>
+
+	* GSSkipMutableArray.m: Change -initWithObjects:count: declaration
+	to match the superclass one in gnustep-base trunk.
+
+2011-10-25 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.h:
+	* GSFIFO.m:
+	Add new method to create a named FIFO and configure it from the
+	defaults system.
+	* GNUmakefile: bump version to 0.3.2
+
+2011-08-29 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.m: Try to fool clang/llvm to avoid useless warning/error.
+
+2011-08-24 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.h:
+	* GSFIFO.m:
+	Use NSCondition to support multiple producer/consumer on FIFO.
+	
+2011-06-11 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.h:
+	* GSFIFO.m:
+	Add the ability to monitor statistics on how long the FIFO blocks
+	on put and get operations.
+	Add methods to get/put multiple items.
+	Add method to get stats for all FIFOs.
+
+2011-06-06 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.h:
+	* GSCache.m:
+	Add a new method to let the delegate know when a cache hit has
+	occurred on an item which is nearning the end of its lifetime ...
+	providing an opportunity for the delegate to refresh the cache
+	before the actual expiry.
+	Also fix minor memory leak.
+
+2011-06-05 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.h:
+	* GSFIFO.m:
+	Use condition locks so that, if we have locking for both addition
+	and removal, we can signal threads waiting at the other end.
+
+2011-06-03 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSTicker.m: Thread safety fixes ... make date storage volatile and
+	ensure that only one thread gets to set the base timestamp.
+
+2011-06-02 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSFIFO.h:
+	* GSFIFO.m:
+	Make FIFO items be void* rather than id since we never send them
+	any messages anyway.
+
+2011-05-19 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GNUmakefile: Add FIFO
+	* Performance.h: Add FIFO
+	* GSFIFO.h: Add a FIFO class
+	* GSFIFO.m: Add a FIFO class
+
+2011-03-08 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GNUmakefile: Bump version number for next release.
+
+2010-11-11 Riccardo Mottola
+
+	* GSCache.m
+	use always class_getInstanceSize() on GNUSTEP for all runtimes
+	and define a compatibility macro for old macs
+
+	* GSThreadPool.h
+	* GSLinkedList.h
+	* GSThreadPool.m
+	* GSSkipMutableArray.m
+	* GSIOThreadPool.h
+	* GSIOThreadPool.m
+	Complete includes and use typedef instead of #define
+	
+2010-11-11 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.m: Try to get defines right to get instance size depending
+	on the runtime in use.
+
+2010-11-10 Riccardo Mottola
+
+	* GSLinkedList.h
+	* GSSkipMutableArray.m
+	* GSIOThreadPool.h
+	Mac 10.4 compatibility definitions
+
+2010-10-01 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSIOThreadPool.h:
+	* GSIOThreadPool.m:
+	Add new methed class for pooling threads to handle I/O and timers.
+
+2010-09-30 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSThreadPool.h:
+	* GSThreadPool.m:
+	Add new methed to return a shared pool.
+
+2010-09-29 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSLinkedList.h:
+	* GSLinkedList.m:
+	Revise structure and API for greater flexibility.
+	* GSThreadPool.h:
+	* GSThreadPool.m:
+	Modify for new linked list api.
+
+2010-09-23 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* performance/GSThreadPool.h:
+	* performance/GSThreadPool.m:
+	Track count of active threads and count of number of methods
+	performed in the thread pool.  Display via -description.
+
+2010-09-22 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSLinkedList.h:
+	* GSLinkedList.m: Simple doubly linked list implementation
+	* GSThreadPool.h:
+	* GSThreadPool.m: Lightweight thread pool implementation
+	* Performance.h: Include new headers
+	* GNUmakefile: Build/install new source
+	Add classes for a simple linked list and for a lightweight thread 
+	pool for rapid handoff of operations to other threads.
+
+2008-12-12 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSSkipMutableArray.m: Fix uninitialised variable.
+
+2008-05-30 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSThroughput.h:
+	* GSThroughput.m:
+	Add support for sending a notification of stats for the last minute
+	so that rates by the minute can be logged.
+
+2008-02-21 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.h:
+	* GSCache.m:
+	Improve handling of case when delegate asks for an item to be kept...
+	changes the delegat callback methoid to include lifetime information.
+	Make the cache thread-safe.
+
+2008-01-31 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.h:
+	* GSCache.m:
+	Make cache keys 'id' rather than 'NSString*' as they can actually be
+	any copyable object.
+
+2007-12-08 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GNUmakefile: bump subminor version for release
+	* GSThroughput.m: ([-description]) output information for periods
+	from last cycle as well as current cycle.
+
+2007-09-14 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	Update to LGPL3
+
+2007-05-30  Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSTicker.m: Ensure tick is current before calling -newSecond:
+
+2007-04-01  Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.m:
+	* GSThroughput.m:
+	* GSSkipMutableArray.m:
+	* GSTicker.m:
+	Changes to avoid compiler warnings on MacOS-X
+	Improvements to calculations for size of instances for cache.
+
+2006-11-11  Matt Rice <ratmice@gmail.com>
+
+	* GSMutableSkipArray.m: Fix bug when deallocating an empty list.
+
+2006-11-11  Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSThroughput.h: New ([add:duration:]) method.
+	* GSThroughput.m: Method to add multiple events with a total
+	duration (eg where recording individual event times has too
+	high an overhead).
+
+2006-11-09  Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GNUmakefile: update version
+	* GSThroughput.m: Allow use to keep running totals of stats
+
+2006-09-27  Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GNUmakefile:
+	* GSIndexedSkipList.m:
+	* GSSkipMutableArray.h:
+	* GSSkipMutableArray.m:
+	Minor fix to (hopefully) build on windows.
+	Hide implementation details.
+	Add convenience method (to create skiplist) to NSMutableArray.
+	Some reformatting for coding standards.
+	* Performance.h: Ad new header for skip lists.
+
+2006-09-27  Matt Rice <ratmice@yahoo.com>
+	
+	* GSSkipMutableArray.[hm]: New NSMutableArray subclass. 
+	* GSIndexedSkipList.[hm]: Underlying C implementation.
+
+2006-06-07 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	* GSCache.h:
+	* GSCache.m:
+	New convenience method to cache an item until a date.
+
+2006-01-11  Nicola Pero <nicola@brainstorm.co.uk>
+
+	* GNUmakefile.wrapper.objc.preamble: New file that fixes the
+	"/usr/bin/ld: cannot find -lPerformance" error when linking Java
+	wrappers.
+
+2005-10-28 Richard Frith-Macdonald  <rfm@gnu.org>
+
+	New Performance library (0.1) 

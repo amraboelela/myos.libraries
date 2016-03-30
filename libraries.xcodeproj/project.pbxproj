@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		6304DF291CAC7A2C00F8B0EE /* Performance */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Performance; sourceTree = "<group>"; };
 		C57AEBC719C7E7BC00072531 /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
 		C57AEBC819C7E7BC00072531 /* cairo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cairo; sourceTree = "<group>"; };
 		C57AEBC919C7E7BC00072531 /* expat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = expat; sourceTree = "<group>"; };
@@ -33,6 +34,7 @@
 		C57AEBC019C7E78100072531 = {
 			isa = PBXGroup;
 			children = (
+				6304DF291CAC7A2C00F8B0EE /* Performance */,
 				C57AEBC719C7E7BC00072531 /* build.sh */,
 				C57AEBDA19C7EDB500072531 /* clean.sh */,
 				C57AEBC819C7E7BC00072531 /* cairo */,

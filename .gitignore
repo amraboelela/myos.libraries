@@ -1,4 +1,10 @@
 *.a
-*.so
+.DS_Store
 xcuserdata
 *.xccheckout
+*_debug.sh
+*_release.sh
+config.h
+GSConfig.h
+*.o
+*.d
