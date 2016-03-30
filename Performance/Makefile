@@ -1,5 +1,5 @@
 
-LDLIBS= -lCoreFoundation -lFoundation
+#LDLIBS= -lCoreFoundation -lFoundation
 
 OBJECTS = \
 	GSCache.o \
