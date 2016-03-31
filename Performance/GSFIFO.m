@@ -21,8 +21,8 @@
    Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111 USA.
    */
 #import "GSFIFO.h"
-#import <Foundation/NSArray.h>
-#import <Foundation/NSException.h>
+#import <Foundation/Foundation.h>
+/*#import <Foundation/NSException.h>
 #import <Foundation/NSLock.h>
 #import <Foundation/NSMapTable.h>
 #import <Foundation/NSString.h>
@@ -30,6 +30,7 @@
 #import <Foundation/NSUserDefaults.h>
 #import <Foundation/NSValue.h>
 #import <Foundation/NSZone.h>
+*/
 
 #if !defined(GNUSTEP)
 #import "NSObject+GSExtensions.h"
