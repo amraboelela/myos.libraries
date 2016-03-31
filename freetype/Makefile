@@ -45,7 +45,7 @@ OBJECTS = \
     ftwinfnt.o \
     ftxf86.o \
 
-include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared
 
 $(ODIR)/%.o: ${MYOS_PATH}/libraries/freetype/base/%.c
 	$(CC) $(CFLAGS) -c $< -o $@

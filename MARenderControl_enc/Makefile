@@ -7,4 +7,4 @@ CFLAGS=-DDEBUG -I$(ANDROID_SOURCE_PATH)/development/tools/emulator/opengl/host/i
 
 OBJECTS=renderControl_client_context.o renderControl_enc.o
 
-include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared

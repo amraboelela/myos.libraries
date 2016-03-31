@@ -26,7 +26,6 @@
 		C57AEBD619C7E7BC00072531 /* pixman */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pixman; sourceTree = "<group>"; };
 		C57AEBD719C7E7BC00072531 /* png */ = {isa = PBXFileReference; lastKnownFileType = folder; path = png; sourceTree = "<group>"; };
 		C57AEBD819C7E7BC00072531 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		C57AEBD919C7E7BC00072531 /* template */ = {isa = PBXFileReference; lastKnownFileType = folder; path = template; sourceTree = "<group>"; };
 		C57AEBDA19C7EDB500072531 /* clean.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = clean.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +53,6 @@
 				C57AEBD619C7E7BC00072531 /* pixman */,
 				C57AEBD719C7E7BC00072531 /* png */,
 				C57AEBD819C7E7BC00072531 /* README.md */,
-				C57AEBD919C7E7BC00072531 /* template */,
 			);
 			sourceTree = "<group>";
 		};

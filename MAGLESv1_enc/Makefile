@@ -8,4 +8,4 @@ OBJECTS = \
     GLEncoderUtils.o \
     gl_enc.o \
 
-include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared

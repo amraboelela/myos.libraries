@@ -25,7 +25,7 @@ OBJECTS = \
     block_trampolines.o \
 
 ifeq ($(BASE_OS),android)
-include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-static
+include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared
 else
 include ${MYOS_PATH}/sdk/$(BASE_OS)/makefile-shared
 endif
