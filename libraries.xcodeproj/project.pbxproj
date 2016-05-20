@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		6304DF291CAC7A2C00F8B0EE /* Performance */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Performance; sourceTree = "<group>"; };
+		63AF047F1CEF833700030CF2 /* leveldb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = leveldb; sourceTree = "<group>"; };
 		C57AEBC819C7E7BC00072531 /* cairo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cairo; sourceTree = "<group>"; };
 		C57AEBC919C7E7BC00072531 /* expat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = expat; sourceTree = "<group>"; };
 		C57AEBCA19C7E7BC00072531 /* fontconfig */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fontconfig; sourceTree = "<group>"; };
@@ -38,6 +39,7 @@
 				C57AEBCB19C7E7BC00072531 /* freetype */,
 				C57AEBCC19C7E7BC00072531 /* icu */,
 				C57AEBCD19C7E7BC00072531 /* lcms */,
+				63AF047F1CEF833700030CF2 /* leveldb */,
 				C57AEBCE19C7E7BC00072531 /* libs */,
 				C57AEBCF19C7E7BC00072531 /* MAEGL */,
 				C57AEBD019C7E7BC00072531 /* MAGLESv1_enc */,
