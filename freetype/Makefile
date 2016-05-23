@@ -1,8 +1,8 @@
 
-LIB_NAME=freetype
-CFLAGS=-DFT2_BUILD_LIBRARY -O2
-LDLIBS=
-LDFLAGS=-v -Wl,--no-undefined
+#LIB_NAME=freetype
+CFLAGS+=-DFT2_BUILD_LIBRARY -O2
+#LDLIBS=
+#LDFLAGS=-v -Wl,--no-undefined
 OBJECTS = \
     ftbase.o \
     ftinit.o \

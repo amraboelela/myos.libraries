@@ -1,6 +1,6 @@
 
-LIB_NAME=cairo
-CFLAGS=-DHAVE_CONFIG_H -DDEBUG
+#LIB_NAME=cairo
+CFLAGS=-DHAVE_CONFIG_H
 #LDLIBS= -lpixman -lz -lpng -lfontconfig -lexpat -lfreetype
 OBJECTS = \
 	cairo-analysis-surface.o \

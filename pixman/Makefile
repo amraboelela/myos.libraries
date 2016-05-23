@@ -1,8 +1,8 @@
 
-LIB_NAME=pixman
-CFLAGS=-DHAVE_CONFIG_H
-LDLIBS=
-LDFLAGS=-v -Wl,--no-undefined
+#LIB_NAME=pixman
+CFLAGS+=-DHAVE_CONFIG_H
+#LDLIBS=
+#LDFLAGS=-v -Wl,--no-undefined
 OBJECTS = \
 	pixman.o \
 	pixman-access.o \

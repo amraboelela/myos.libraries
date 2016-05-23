@@ -1,5 +1,7 @@
 ##myos.libraries
 
+Porting linux / unix libraries to work in myOS environment
+
 * Depends on:
   * [myos.sdk](https://github.com/amraboelela/myos.sdk)
 

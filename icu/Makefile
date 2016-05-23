@@ -1,9 +1,8 @@
 
-LIB_NAME=icu
-#CFLAGS=-DDEBUG
+#LIB_NAME=icu
 CFLAGS+=-DU_I18N_IMPLEMENTATION -DU_COMMON_IMPLEMENTATION
 #LDLIBS=-lobjc
-LDFLAGS=-v -Wl,--no-undefined
+#LDFLAGS=-v -Wl,--no-undefined
 OBJECTS = \
     appendable.o \
     bmpset.o \

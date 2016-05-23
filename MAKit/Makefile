@@ -3,7 +3,7 @@
 #
 
 #LIB_NAME=MAKit
-CFLAGS+=-DDEBUG -I$(ANDROID_SOURCE_PATH)/device/generic/goldfish/opengl/system -I$(ANDROID_SOURCE_PATH)/development/tools/emulator/opengl/host/include/libOpenglRender -I${MY_FRAMEWORKS_PATH}/libraries/MAOpenglCodecCommon
+CFLAGS+=-I$(ANDROID_SOURCE_PATH)/device/generic/goldfish/opengl/system -I$(ANDROID_SOURCE_PATH)/development/tools/emulator/opengl/host/include/libOpenglRender -I${MY_FRAMEWORKS_PATH}/libraries/MAOpenglCodecCommon
 
 OBJECTS= \
     MABufferProducer.o \

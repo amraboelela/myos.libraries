@@ -1,6 +1,6 @@
 
-LIB_NAME=fontconfig
-CFLAGS=-DHAVE_CONFIG_H -DDEBUG -DFONTCONFIG_PATH='"/system/fonts"' -DFC_CACHEDIR='"cache"'
+#LIB_NAME=fontconfig
+CFLAGS+=-DHAVE_CONFIG_H -DFONTCONFIG_PATH='"/system/fonts"' -DFC_CACHEDIR='"cache"'
 
 #ARLIBS=-lfreetype -lexpat -llog
 

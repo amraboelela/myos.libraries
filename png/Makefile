@@ -1,5 +1,5 @@
 
-LIB_NAME=png
+#LIB_NAME=png
 
 OBJECTS = \
 	png.o \

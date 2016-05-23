@@ -1,5 +1,6 @@
 
-LIB_NAME=objc
+#LIB_NAME=objc
+
 OBJECTS = \
     sendmsg2.o \
     dtable.o \
